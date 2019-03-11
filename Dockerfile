@@ -7,7 +7,8 @@ RUN add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - && \
     apt-get -y update && \
     apt-get install -y libpq5 && \
-    apt-get install -y libpq-dev
+    apt-get install -y libpq-dev && \
+    apt-get install -y postgresql postgresql-contrib
 
 # DMD and Dub
 RUN wget http://downloads.dlang.org/releases/2.x/2.085.0/dmd_2.085.0-0_amd64.deb && \
