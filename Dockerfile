@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN apt-get -y update && apt-get install -y wget libevent-pthreads-2.0-5 libevent-dev libssl-dev software-properties-common python-software-properties libmosquitto-dev gcc libcurl4-openssl-dev g++ build-essential
+RUN apt-get -y update && apt-get install -y wget libevent-pthreads-2.0-5 libevent-dev libssl-dev software-properties-common python-software-properties libmosquitto-dev gcc libcurl4-openssl-dev g++ build-essential netcat-traditional
 
 # Add postgres dev libs
 RUN add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' && \
